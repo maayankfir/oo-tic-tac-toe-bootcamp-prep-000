@@ -91,6 +91,11 @@ def play
     turn
     turns += 1
   end
+  if won?
+    "Congratularion" winner
+  elsif draw?
+    "The game ended in a draw"
+  end
 end
 
 end
