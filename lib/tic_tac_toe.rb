@@ -97,6 +97,6 @@ def play
     "Cat's Game!"
   else
     nil
-
+end
   end
 end
