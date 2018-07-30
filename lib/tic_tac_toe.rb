@@ -97,5 +97,3 @@ def play
     "The game ended in a draw"
   end
 end
-
-end
