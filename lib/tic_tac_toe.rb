@@ -30,4 +30,9 @@ end
 def move(index, current_player = "X")
   @board[index] = current_player
 end
+
+def position_taken?(index, location)
+  @board[location] != " " && != ""
+end
+
 end
