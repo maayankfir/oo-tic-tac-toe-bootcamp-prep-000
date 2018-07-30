@@ -92,7 +92,7 @@ def play
       puts "Congratulations X!"
     else if winner == "O"
       puts "Congratulations O!"
-    else
+    elsif draw?
       puts "Cat's Game!"
     end
   end
