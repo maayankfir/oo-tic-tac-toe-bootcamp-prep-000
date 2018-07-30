@@ -90,7 +90,7 @@ def play
     turn
     if winner == "X"
       puts "Congratulations X!"
-    else if winner == "O"
+    elsif winner == "O"
       puts "Congratulations O!"
     elsif draw?
       puts "Cat's Game!"
