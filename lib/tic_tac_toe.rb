@@ -86,17 +86,14 @@ def winner
 end
 
 def play
-  turns_count = 0
-  until turns_count == 9
+  until over?
     turn
-    turns_count += 1
-  end
-  if won?
-    puts "Congratulations!"
-  elsif draw?
-    "Cat's Game!"
-  else
-    nil
-end
+    if winner == "X"
+      puts "Congratulations X!"
+    else if winner == "O"
+      puts "Congratulations O!"
+    else
+      puts "Cat's Game!"
+    end
   end
 end
