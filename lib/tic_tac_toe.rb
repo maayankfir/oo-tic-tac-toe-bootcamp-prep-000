@@ -72,7 +72,7 @@ def full?
 end
 
 def draw?
-  full? && !won?
+  (full?) && !(won?)
 end
 
 def over?
@@ -89,6 +89,7 @@ def play
   until over?
     turn
   end
+
     if won?
       puts "Congratulations #{winner}!"
     elsif draw?
