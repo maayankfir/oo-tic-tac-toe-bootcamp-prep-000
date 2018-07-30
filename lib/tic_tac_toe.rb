@@ -86,7 +86,8 @@ def winner
 end
 
 def play
-  until over?
+  counter = 0
+  until counter == 9
     turn
   end
     if won?
