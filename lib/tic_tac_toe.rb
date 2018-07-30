@@ -94,8 +94,7 @@ def play
       puts "Congratulations O!"
     elsif draw?
       puts "Cat's Game!"
-    else
-      nil
+
     end
   end
 end
