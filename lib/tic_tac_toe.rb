@@ -43,6 +43,7 @@ def turn
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
+  
   if valid_move?(index)
     move(index, current_player)
     display_board
@@ -80,8 +81,8 @@ def over?
 end
 
 def winner
-  if winning_combo = won?
-    @board[winning_combo.first]
+  if combo = won?
+    @board[combo.first]
   end
 end
 
