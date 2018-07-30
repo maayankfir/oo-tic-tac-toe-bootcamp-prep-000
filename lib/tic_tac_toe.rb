@@ -86,10 +86,10 @@ def winner
 end
 
 def play
-  turns = 0
-  until turns == 9
+  turns_count = 0
+  until turns_count == 9
     turn
-    turns += 1
+    turns_count += 1
   end
   if won?
     "Congratularion" winner
