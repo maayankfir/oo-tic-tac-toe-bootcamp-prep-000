@@ -92,8 +92,8 @@ def play
     turns_count += 1
   end
   if won?
-    "Congratularion" winner
+    puts "Congratulations!"
   elsif draw?
-    "The game ended in a draw"
+    "Cat's Game!"
   end
 end
